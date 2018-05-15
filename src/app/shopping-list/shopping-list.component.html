@@ -1,5 +1,12 @@
    <div class="col-xs-10">
      <app-shopping-list-edit></app-shopping-list-edit>
      <hr>
-     <div class="proto-list"> The list </div>
+     <ul class="list-group">
+       <a href="#"
+       class="list-group-item"
+       style="cursor: pointer"
+       *ngFor="let ingredient of ingredients"
+        >
+      {{ ingredient.name }} {{ ingredient.amount }} </a>
+     </ul>
    </div>
